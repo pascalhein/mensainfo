@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/preference_category_info">
+        <Preference
+            app:title="@string/app_name"
+            app:key="app_info" />
+        <Preference
+            app:title="OpenMensa API&#10;&#169; 2014-2019 OpenMensa"
+            app:summary="GNU Affero General Public License v3.0"
+            app:fragment="mensainfo.app.ui.LicenceFragment" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="item_padding">5dp</dimen>
+    <dimen name="item_info_width">50dp</dimen>
+</resources>

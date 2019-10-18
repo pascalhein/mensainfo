@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/card_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="vertical"
+            android:id="@+id/widget_canteen_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/widget_name_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/widget_name_2" />
+        </LinearLayout>
+
+        <!--Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/widget_button_left"
+            android:text="◀"
+            tools:ignore="HardcodedText" /-->
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/widget_day_of_week"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/widget_date"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--Button
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:id="@+id/widget_button_right"
+            android:text="▶"
+            tools:ignore="HardcodedText" /-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/widget_meal_list"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/widget_empty">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:layout_marginStart="6dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:layout_marginEnd="6dp"
+            android:textStyle="italic"
+            android:text="@string/widget_no_meals" />
+
+    </LinearLayout>
+
+</LinearLayout>
